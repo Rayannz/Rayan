@@ -1,0 +1,17 @@
+on: push
+name: Deploy website on push
+jobs:
+  web-deploy:
+    name: deploy 
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v3
+    
+    - name: Sync files 
+      uses: samKirkland/FTP-Deploy-Action@4.3.3
+      with:
+       server: files.000webhost.com
+       username: Rayan
+       password: Rayanfev78
+       server-dir : public_html/
