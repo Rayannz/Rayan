@@ -11,7 +11,7 @@ jobs:
     - name: Sync files 
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-       server: files.000webhost.com
-       username: Rayan
-       password: Rayanfev78
-       server-dir : public_html/
+        server: files.000webhost.com
+        username: Rayan
+        password: Rayanfev78
+        server-dir : public_html/
