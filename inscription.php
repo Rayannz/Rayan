@@ -1,6 +1,6 @@
 <?php
 session_start();
-$bdd = new PDO('mysql:host=localhost;dbname=id20273475_mehdi;chareset=utf8;', 'id20273475_root', '5z*CO?-kN3AM3RQB');
+$bdd = new PDO('mysql:host=localhost;dbname=id20282801_sitemehdirayan;chareset=utf8;', 'id20282801_root', 'hbjFT-)T@J+x0_fa');
 if (isset($_POST['envoie'])){
     if (!empty($_POST['pseudo']) AND !empty($_POST['mdp'])){
         $pseudo = htmlspecialchars($_POST["pseudo"]);
